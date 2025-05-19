@@ -3,64 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WWE 2K16 Universe Mode</title>
+  <title>WWE 2K16 Universe Mode — Ultimate Showdown</title>
   <style>
     body {
-      background: #121212;
+      background: linear-gradient(135deg, #1a1a1a 0%, #3b0000 100%);
       color: #eee;
-      font-family: Arial, sans-serif;
+      font-family: 'Arial Black', Arial, sans-serif;
       margin: 0;
       padding: 20px;
     }
-    h1 {
+    header {
       text-align: center;
-      color: #c62828;
-      margin-bottom: 30px;
+      padding-bottom: 30px;
+      border-bottom: 3px solid #ff0000;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: #ff0000;
+      text-shadow: 2px 2px 6px #900;
+    }
+    header p {
+      font-size: 1.3rem;
+      font-style: italic;
+      margin-top: 6px;
+      color: #ffa0a0;
     }
     .champions {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
+      gap: 25px;
+      margin-top: 40px;
     }
     .champ-card {
       background: #222;
-      border-radius: 10px;
-      padding: 15px;
-      width: 180px;
-      box-shadow: 0 0 10px #c62828aa;
+      border-radius: 15px;
+      padding: 20px;
+      width: 220px;
+      box-shadow: 0 0 20px #ff0000aa;
       text-align: center;
       transition: transform 0.3s ease;
+      cursor: default;
     }
     .champ-card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 20px #ff4444;
+      transform: scale(1.1);
+      box-shadow: 0 0 40px #ff4444;
     }
     .champ-card img {
       width: 100%;
-      border-radius: 10px;
-      border: 2px solid #c62828;
-      margin-bottom: 12px;
+      border-radius: 15px;
+      border: 3px solid #ff0000;
+      margin-bottom: 15px;
     }
     .champ-card p {
       margin: 0;
-      font-weight: bold;
-      font-size: 1rem;
+      font-weight: 900;
+      font-size: 1.1rem;
       color: #fff;
+      text-shadow: 1px 1px 2px #900;
     }
     footer {
-      margin-top: 40px;
+      margin-top: 60px;
       text-align: center;
-      color: #888;
+      color: #aaa;
       font-size: 0.9rem;
+      border-top: 1px solid #333;
+      padding-top: 15px;
     }
   </style>
 </head>
 <body>
 
-  <h1>WWE 2K16 Universe Mode - Champions (Feb 2017)</h1>
+  <header>
+    <h1>WWE 2K16 Universe Mode</h1>
+    <p>The Ultimate WWE Saga - Champions & Rivalries</p>
+  </header>
 
-  <div class="champions">
+  <section class="champions">
     <div class="champ-card">
       <img src="SethRollins.png" alt="Seth Rollins" />
       <p>WWE Champion<br /><small>Seth Rollins</small></p>
@@ -85,11 +105,13 @@
       <img src="TheUsos.png" alt="The Usos" />
       <p>WWE Tag Team Champions<br /><small>The Usos</small></p>
     </div>
-  </div>
+  </section>
 
   <footer>
-    WWE 2K16 Universe Mode &copy; 2025
+    WWE 2K16 Universe Mode &copy; 2025 - Powered by Passion and Chaos
   </footer>
 
 </body>
 </html>
+
+
