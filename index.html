@@ -1,6 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><style>
+  .champion-card {
+    background: #1e1e1e;
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    border: 2px solid #444;
+  }
+  .champion-img {
+    width: 180px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  button {
+    margin-top: 10px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .history {
+    margin-top: 15px;
+    text-align: left;
+  }
+</style>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>WWE 2K16 Universe Mode — Ultimate Showdown</title>
@@ -110,8 +141,29 @@
   <footer>
     WWE 2K16 Universe Mode &copy; 2025 - Powered by Passion and Chaos
   </footer>
+<script>
+  function toggleHistory(id) {
+    const section = document.getElementById(id);
+    section.style.display = section.style.display === "none" ? "block" : "none";
+  }
+</script>
 
-</body>
+</body><div class="champion-card">
+  <img src="Brock.png" alt="Brock Lesnar" class="champion-img" />
+  <h2>Undisputed Champion: Brock Lesnar</h2>
+  <p><strong>Reign started:</strong> 28/12/2016</p>
+  <p><strong>Status:</strong> Ongoing</p>
+  <button onclick="toggleHistory('undisputedHistory')">View Previous Champions</button>
+  <div id="undisputedHistory" class="history" style="display: none;">
+    <ul>
+      <li>The Rock (28/08/2016 – 28/12/2016) — 122 days</li>
+      <li>Seth Rollins (28/07/2016 – 28/08/2016) — 31 days</li>
+      <li>Brock Lesnar (28/04/2016 – 28/07/2016) — 91 days</li>
+      <li>Seth Rollins (01/04/2016 – 28/04/2016) — 27 days</li>
+    </ul>
+  </div>
+</div>
+
 </html>
 
 
