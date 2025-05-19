@@ -1,40 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><style>
-  .champion-card {
-    background: #1e1e1e;
-    color: white;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 600px;
-    text-align: center;
-    border: 2px solid #444;
-  }
-  .champion-img {
-    width: 180px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
-  button {
-    margin-top: 10px;
-    background-color: crimson;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .history {
-    margin-top: 15px;
-    text-align: left;
-  }
-</style>
-
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WWE 2K16 Universe Mode — Ultimate Showdown</title>
+  <title>WWE 2K16 Universe Mode</title>
   <style>
     body {
       background: linear-gradient(135deg, #1a1a1a 0%, #3b0000 100%);
@@ -50,14 +19,12 @@
     }
     header h1 {
       font-size: 3rem;
-      margin: 0;
       color: #ff0000;
       text-shadow: 2px 2px 6px #900;
     }
     header p {
       font-size: 1.3rem;
       font-style: italic;
-      margin-top: 6px;
       color: #ffa0a0;
     }
     .champions {
@@ -71,14 +38,13 @@
       background: #222;
       border-radius: 15px;
       padding: 20px;
-      width: 220px;
+      width: 240px;
       box-shadow: 0 0 20px #ff0000aa;
       text-align: center;
       transition: transform 0.3s ease;
-      cursor: default;
     }
     .champ-card:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
       box-shadow: 0 0 40px #ff4444;
     }
     .champ-card img {
@@ -92,7 +58,35 @@
       font-weight: 900;
       font-size: 1.1rem;
       color: #fff;
-      text-shadow: 1px 1px 2px #900;
+    }
+    .history-card {
+      background: #111;
+      margin: 20px auto;
+      padding: 20px;
+      border: 2px solid #444;
+      border-radius: 10px;
+      max-width: 700px;
+    }
+    .history-card h2 {
+      color: crimson;
+      text-align: center;
+    }
+    .history-card ul {
+      list-style: none;
+      padding: 0;
+    }
+    .history-card li {
+      padding: 5px 0;
+      border-bottom: 1px solid #333;
+    }
+    button {
+      margin-top: 10px;
+      background-color: crimson;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
     }
     footer {
       margin-top: 60px;
@@ -108,62 +102,116 @@
 
   <header>
     <h1>WWE 2K16 Universe Mode</h1>
-    <p>The Ultimate WWE Saga - Champions & Rivalries</p>
+    <p>The Ultimate WWE Saga — Champions & Legacy</p>
   </header>
 
   <section class="champions">
     <div class="champ-card">
       <img src="SethRollins.png" alt="Seth Rollins" />
-      <p>WWE Champion<br /><small>Seth Rollins</small></p>
+      <p>World Heavyweight Champion<br><small>Seth Rollins</small></p>
     </div>
     <div class="champ-card">
       <img src="Brock.png" alt="Brock Lesnar" />
-      <p>Universal Champion<br /><small>Brock Lesnar</small></p>
+      <p>Undisputed Champion<br><small>Brock Lesnar</small></p>
     </div>
     <div class="champ-card">
       <img src="Ziggler.png" alt="Dolph Ziggler" />
-      <p>Intercontinental Champion<br /><small>Dolph Ziggler</small></p>
+      <p>Intercontinental Champion<br><small>Dolph Ziggler</small></p>
     </div>
     <div class="champ-card">
       <img src="BadNews.png" alt="Bad News Barrett" />
-      <p>United States Champion<br /><small>Bad News Barrett</small></p>
+      <p>United States Champion<br><small>Bad News Barrett</small></p>
     </div>
     <div class="champ-card">
       <img src="Paige.png" alt="Paige" />
-      <p>RAW & SmackDown Women’s Champion<br /><small>Paige</small></p>
+      <p>RAW & SmackDown Women’s Champion<br><small>Paige</small></p>
     </div>
     <div class="champ-card">
       <img src="TheUsos.png" alt="The Usos" />
-      <p>WWE Tag Team Champions<br /><small>The Usos</small></p>
+      <p>Tag Team Champions<br><small>The Usos</small></p>
+    </div>
+  </section>
+
+  <section id="histories">
+    <div class="history-card">
+      <h2>Undisputed Championship History</h2>
+      <ul>
+        <li>Seth Rollins (01/04/2016 – 28/04/2016) — 27 days</li>
+        <li>Brock Lesnar (28/04/2016 – 28/07/2016) — 91 days</li>
+        <li>Seth Rollins (28/07/2016 – 28/08/2016) — 31 days</li>
+        <li>The Rock (28/08/2016 – 28/12/2016) — 122 days</li>
+        <li><strong>Brock Lesnar (28/12/2016 – Ongoing)</strong></li>
+      </ul>
+    </div>
+
+    <div class="history-card">
+      <h2>World Heavyweight Championship History</h2>
+      <ul>
+        <li>Kane (01/04/2016 – 28/04/2016) — 27 days</li>
+        <li>Roman Reigns (28/04/2016 – 30/04/2016) — 2 days</li>
+        <li>Kane (30/04/2016 – 28/10/2016) — 181 days</li>
+        <li>Randy Orton (28/10/2016 – 28/01/2017) — 92 days</li>
+        <li><strong>Seth Rollins (28/01/2017 – Ongoing)</strong></li>
+      </ul>
+    </div>
+
+    <div class="history-card">
+      <h2>Intercontinental Championship History</h2>
+      <ul>
+        <li>Ryback (01/04/2016 – 28/04/2016) — 27 days</li>
+        <li>Dolph Ziggler (28/04/2016 – 28/06/2016) — 61 days</li>
+        <li>Big Show (28/06/2016 – 28/07/2016) — 30 days</li>
+        <li>Cesaro (28/07/2016 – 28/08/2016) — 31 days</li>
+        <li>Sheamus (28/08/2016 – 09/11/2016) — 73 days</li>
+        <li>Ryback (09/11/2016 – 28/11/2016) — 19 days</li>
+        <li><strong>Dolph Ziggler (28/11/2016 – Ongoing)</strong></li>
+      </ul>
+    </div>
+
+    <div class="history-card">
+      <h2>United States Championship History</h2>
+      <ul>
+        <li>John Cena (01/04/2016 – 28/08/2016) — 149 days</li>
+        <li>Kevin Owens (28/08/2016 – 28/09/2016) — 31 days</li>
+        <li>John Cena (28/09/2016 – 28/10/2016) — 30 days</li>
+        <li><strong>Bad News Barrett (28/10/2016 – Ongoing)</strong></li>
+      </ul>
+    </div>
+
+    <div class="history-card">
+      <h2>RAW & SmackDown Women’s Championship History</h2>
+      <ul>
+        <li>Nikki Bella (01/04/2016 – 28/07/2016) — 118 days</li>
+        <li>Naomi (28/07/2016 – 28/10/2016) — 92 days</li>
+        <li>AJ Lee (28/10/2016 – 28/11/2016) — 31 days</li>
+        <li><strong>Paige (28/11/2016 – Ongoing)</strong></li>
+      </ul>
+    </div>
+
+    <div class="history-card">
+      <h2>WWE Tag Team Championship History</h2>
+      <ul>
+        <li>The New Day (01/04/2016 – 28/05/2016) — 57 days</li>
+        <li>The Ascension (28/05/2016 – 28/10/2016) — 153 days</li>
+        <li>The New Day (28/10/2016 – 28/11/2016) — 31 days</li>
+        <li><strong>The Usos (28/11/2016 – Ongoing)</strong></li>
+      </ul>
+    </div>
+
+    <div class="history-card">
+      <h2>NXT Tag Team Championship History</h2>
+      <ul>
+        <li><strong>The Ascension (28/11/2016 – Ongoing)</strong></li>
+      </ul>
     </div>
   </section>
 
   <footer>
-    WWE 2K16 Universe Mode &copy; 2025 - Powered by Passion and Chaos
+    WWE 2K16 Universe Mode © 2025 — Powered by Passion and Chaos
   </footer>
-<script>
-  function toggleHistory(id) {
-    const section = document.getElementById(id);
-    section.style.display = section.style.display === "none" ? "block" : "none";
-  }
-</script>
 
-</body><div class="champion-card">
-  <img src="Brock.png" alt="Brock Lesnar" class="champion-img" />
-  <h2>Undisputed Champion: Brock Lesnar</h2>
-  <p><strong>Reign started:</strong> 28/12/2016</p>
-  <p><strong>Status:</strong> Ongoing</p>
-  <button onclick="toggleHistory('undisputedHistory')">View Previous Champions</button>
-  <div id="undisputedHistory" class="history" style="display: none;">
-    <ul>
-      <li>The Rock (28/08/2016 – 28/12/2016) — 122 days</li>
-      <li>Seth Rollins (28/07/2016 – 28/08/2016) — 31 days</li>
-      <li>Brock Lesnar (28/04/2016 – 28/07/2016) — 91 days</li>
-      <li>Seth Rollins (01/04/2016 – 28/04/2016) — 27 days</li>
-    </ul>
-  </div>
-</div>
-
+</body>
 </html>
+
 
 
