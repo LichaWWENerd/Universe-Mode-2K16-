@@ -1,33 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WWE 2K16 Universe Mode</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #0f0f0f;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+
+    header {
+      background: #000;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 4px solid crimson;
+    }
+
+    header h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3rem;
+      color: crimson;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-style: italic;
+      color: #ccc;
+    }
+
+    nav {
+      background: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      border-bottom: 2px solid #333;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.2rem;
+    }
+
+    nav a:hover {
+      color: crimson;
+    }
+
+    .champions-section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .champions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      justify-items: center;
+      margin-top: 2rem;
+    }
+
+    .champ-card {
+      background: #1a1a1a;
+      padding: 1rem;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #ff000066;
+      width: 220px;
+      transition: 0.3s ease;
+      transform: translateY(0);
+    }
+
+    .champ-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 30px #ff0000cc;
+    }
+
+    .champ-card img {
+      width: 100%;
+      border-radius: 10px;
+      border: 3px solid crimson;
+      margin-bottom: 0.5rem;
+    }
+
+    .champ-card p {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.1rem;
+      margin: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #111;
+      border-top: 2px solid crimson;
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <img src="logo.png" alt="WWE Logo" class="logo">
-    <h1>Welcome to WWE 2K16 Universe Mode</h1>
-    <nav>
-      <ul>
-        <li><a href="raw.html">RAW</a></li>
-        <li><a href="smackdown.html">SmackDown</a></li>
-        <li><a href="nxt.html">NXT</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="ppv.html">PPV</a></li>
-      </ul>
-    </nav>
+    <h1>WWE 2K16 Universe Mode</h1>
+    <p>Chaos. Control. Championship Legacy.</p>
   </header>
-  <main>
-    <p>Explore the exciting world of WWE 2K16 Universe Mode. Choose a brand to get started.</p>
-  </main>
+
+  <nav>
+    <a href="raw.html">RAW</a>
+    <a href="smackdown.html">SmackDown</a>
+    <a href="nxt.html">NXT</a>
+    <a href="ppv.html">PPV</a>
+    <a href="news.html">News</a>
+    <a href="titles.html">Championships</a>
+  </nav>
+
+  <section class="champions-section">
+    <h2>Current Champions</h2>
+    <div class="champions-grid">
+      <div class="champ-card">
+        <img src="Brock.png" alt="Brock Lesnar">
+        <p>Undisputed Champion<br><small>Brock Lesnar</small></p>
+      </div>
+      <div class="champ-card">
+        <img src="TheUsos.png" alt="The Usos">
+        <p>Tag Team Champions<br><small>The Usos</small></p>
+      </div>
+      <div class="champ-card">
+        <img src="SethRollins.png" alt="Seth Rollins">
+        <p>World Heavyweight Champion<br><small>Seth Rollins</small></p>
+      </div>
+      <div class="champ-card">
+        <img src="Paige.png" alt="Paige">
+        <p>RAW & SD Women's Champion<br><small>Paige</small></p>
+      </div>
+      <div class="champ-card">
+        <img src="BadNews.png" alt="Bad News Barrett">
+        <p>United States Champion<br><small>Bad News Barrett</small></p>
+      </div>
+      <div class="champ-card">
+        <img src="Ziggler.png" alt="Dolph Ziggler">
+        <p>Intercontinental Champion<br><small>Dolph Ziggler</small></p>
+      </div>
+    </div>
+  </section>
+
   <footer>
-    <p>&copy; 2025 WWE 2K16 Universe Mode. All Rights Reserved.</p>
+    © 2025 WWE 2K16 Universe Mode | Made by LichawWENerd — Powered by Chaos and Pop
   </footer>
+
 </body>
 </html>
+
 
 
 
